@@ -17,6 +17,10 @@ public class ElementoH1 extends Elemento{
         this.titulo = titulo;
     }
 
+    /**
+     * Propósito: A partir de un String titulo, devuelve un String equivalente al cuerpo de un elemento h1
+     * @return devuelve un String equivalente al cuerpo del elemento h1, reemplazando el titulo
+     */
     @Override
     public String devolverElemento() {
         String h1 = "<h1> $title </h1>";

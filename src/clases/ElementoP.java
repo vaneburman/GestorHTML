@@ -17,6 +17,10 @@ public class ElementoP extends Elemento{
         this.texto = texto;
     }
 
+    /**
+     * Propósito: Generar un String para renderizar un párrafo en HTML con el texto seteado
+     * @return devuelve un String equivalente a la etiqueta párrafo de HTML.
+     */
     @Override
     public String devolverElemento() {
         String p = "<p> $texto </p>";

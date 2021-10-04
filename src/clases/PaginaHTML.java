@@ -16,7 +16,11 @@ public class PaginaHTML implements IPagina {
     public void setPagina(String pagina) {
         this.pagina = pagina;
     }
-
+    /**
+     * Propósito: a partir de una lista de Elementos, recorre y transforma cada elementos a String y finalmente setea el String página.
+     * @param arrayList es una lista de Elementos del tipo IElementos
+     * @param plantilla es un String que actúa de template para generar la página
+     */
     @Override
     public void estructurarPagina(ArrayList<IElemento> arrayList, String plantilla) {
         String linea="";

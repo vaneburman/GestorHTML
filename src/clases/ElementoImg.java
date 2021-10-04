@@ -3,7 +3,7 @@ package clases;
 import java.util.StringJoiner;
 
 public class ElementoImg extends Elemento{
-    int opcion;
+    private int opcion;
 
     public ElementoImg(int opcion) {
         this.opcion = opcion;
@@ -17,7 +17,10 @@ public class ElementoImg extends Elemento{
         this.opcion = opcion;
     }
 
-
+    /**
+     * Propósito: setear la opción de imágen seleccionada para renderizar en la página HTML
+     * @return devuelve un String equivalente a la etiqueta imagen, con el source correspondiente al atributo opción.
+     */
     @Override
     public String devolverElemento() {
         String result;

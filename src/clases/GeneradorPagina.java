@@ -14,7 +14,11 @@ public class GeneradorPagina implements IGenerable {
     FileWriter filewriter = null;
     PrintWriter printw = null;
 
-
+    /**
+     * Propósito: Generar y escribir los archivos HTML que el usuario setea en la ejecución, a partir de una lista de páginas
+     * @param arrayList2 es una lista de elementos del tipo IPaginas
+     * @throws IOException
+     */
     @Override
     public void generarPaginas(ArrayList<IPagina> arrayList2) throws IOException {
         int nroPagina = 1;

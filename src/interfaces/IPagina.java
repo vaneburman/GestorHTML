@@ -1,7 +1,4 @@
 package interfaces;
-
-import clases.Plantilla;
-
 import java.util.ArrayList;
 
 public interface IPagina {

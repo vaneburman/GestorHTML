@@ -3,7 +3,6 @@ package clases;
 import interfaces.IGenerable;
 import interfaces.IPagina;
 
-import java.io.File;
 import java.io.FileWriter;
 
 import java.io.IOException;

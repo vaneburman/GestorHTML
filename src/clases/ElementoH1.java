@@ -23,7 +23,7 @@ public class ElementoH1 extends Elemento{
      */
     @Override
     public String devolverElemento() {
-        String h1 = "<h1> $title </h1>";
+        String h1 = "<center><h1> $title </h1></center>";
         h1 = h1.replace("$title", titulo);
         return h1;
     }

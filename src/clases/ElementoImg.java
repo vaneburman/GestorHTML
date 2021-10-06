@@ -3,17 +3,17 @@ package clases;
 import java.util.StringJoiner;
 
 public class ElementoImg extends Elemento{
-    private int opcion;
+    private String opcion;
 
-    public ElementoImg(int opcion) {
+    public ElementoImg(String opcion) {
         this.opcion = opcion;
     }
 
-    public int getOpcion() {
+    public String getOpcion() {
         return this.opcion;
     }
 
-    public void setOpcion(int opcion) {
+    public void setOpcion(String opcion) {
         this.opcion = opcion;
     }
 
@@ -26,20 +26,20 @@ public class ElementoImg extends Elemento{
         String result;
 
         switch (opcion){
-            case 1:
-                result = "<img src=\"assets/Brownies.jpg\" alt=\"Foto de Brownies\" />";
+            case "1":
+                result = "<center><img src=\"assets/Brownies.jpg\" alt=\"Foto de Brownies\" width=\"400\"  /></center>";
                 break;
-            case 2:
-                result = "<img src=\"assets/Cupcakes.jpg\" alt=\"Foto de Cupcakes\"  />";
+            case "2":
+                result = "<center><img src=\"assets/Cupcakes.jpg\" alt=\"Foto de Cupcakes\" width=\"400\"  /></center>";
                 break;
-            case 3:
-                result = "<img src=\"assets/Donuts.jpg\" alt=\"Foto de Donas\" />";
+            case "3":
+                result = "<center><img src=\"assets/Donuts.jpg\" alt=\"Foto de Donas\" width=\"400\"  /></center>";
                 break;
-            case 4:
-                result = "<img src=\"assets/Macarons.jpg\" alt=\"Foto de Macarons\" />";
+            case "4":
+                result = "<center><img src=\"assets/Macarons.jpg\" alt=\"Foto de Macarons\" width=\"400\"  /></center>";
                 break;
             default:
-                result = "<img src=\"assets/default.png\" alt=\"Error de imagen\" />";
+                result = "<center><img src=\"" + opcion + "\" alt=\"Nueva imagen\" width=\"400\"  /></center>";
         }
 
         return result;

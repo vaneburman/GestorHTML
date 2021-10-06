@@ -23,7 +23,7 @@ public class ElementoP extends Elemento{
      */
     @Override
     public String devolverElemento() {
-        String p = "<p> $texto </p>";
+        String p = "<center><p> $texto </p><center>";
         p = p.replace("$texto", texto);
         return p;
     }
